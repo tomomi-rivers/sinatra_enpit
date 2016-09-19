@@ -10,3 +10,7 @@ get '/' do
 </html>
 EOS
 end
+
+get '/call/:name' do
+  "こんにちは、#{params['name']}"
+end
