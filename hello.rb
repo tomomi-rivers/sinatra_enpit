@@ -14,3 +14,7 @@ end
 get '/call/:name' do
   "こんにちは、#{params['name'].upcase}"
 end
+
+get '/test' do
+  slim :index
+end
