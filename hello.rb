@@ -12,5 +12,5 @@ EOS
 end
 
 get '/call/:name' do
-  "こんにちは、#{params['name']}"
+  "こんにちは、#{params['name'].upcase}"
 end
