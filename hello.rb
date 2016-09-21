@@ -1,20 +1,16 @@
 require 'sinatra'
 
 get '/' do
-<<-EOS
-<html>
-  <head></head>
-  <body>
-    <h1>Hello sinatra world</>
-  </body>
-</html>
-EOS
+  erb :index
 end
 
-get '/call/:name' do
-  "こんにちは、#{params['name'].upcase}"
+get '/london' do
+  erb :london
 end
 
-get '/test' do
-  slim :index
+get '/tokyo' do
+  erb :tokyo
+end
+get '/newyork' do
+  erb :newyork
 end
